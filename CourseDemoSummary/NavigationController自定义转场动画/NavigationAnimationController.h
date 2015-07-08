@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NavigationManager : NSObject
+@interface NavigationAnimationController : NSObject <UINavigationControllerDelegate , UIViewControllerAnimatedTransitioning>
+
+@property (nonatomic, strong) UIPercentDrivenInteractiveTransition * percentTransition;
 
 @end

@@ -28,7 +28,9 @@
         _window = ({
             
             UIWindow * window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-            window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[[HomeViewController alloc] init]];
+            UINavigationController * naVC = [[UINavigationController alloc] initWithRootViewController:[[HomeViewController alloc] init]];
+            
+            window.rootViewController = naVC;
             window;
             
         });

@@ -102,6 +102,9 @@
     
     [self _addCourseInfo:@"CAGradientLayer + mask"];
     [self _addCourseControllerInfo:@"GradientLayerWithMaskViewController"];
+    
+    [self _addCourseInfo:@"CollectionView自定义布局"];
+    [self _addCourseControllerInfo:@"CollectionViewLayoutViewController"];
 }
 
 @end

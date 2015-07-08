@@ -7,8 +7,11 @@
 //
 
 #import "CollectionViewLayoutViewController.h"
+#import "DHCollectionViewLayout.h"
 
-@interface CollectionViewLayoutViewController ()
+@interface CollectionViewLayoutViewController () <UICollectionViewDataSource>
+
+@property (nonatomic, strong) UICollectionView * collectionView;
 
 @end
 
@@ -16,22 +19,55 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    [self initializeAppearance];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)initializeAppearance
+{
+    self.view.backgroundColor  = [UIColor whiteColor];
+    [self.view addSubview:self.collectionView];
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+#pragma mark - getter
+- (UICollectionView *)collectionView
+{
+    if (!_collectionView) {
+        _collectionView = ({
+        
+            UICollectionView * collectionView = [[UICollectionView alloc] initWithFrame:self.view.bounds collectionViewLayout:[[DHCollectionViewLayout alloc] init]];
+            
+            collectionView.backgroundColor = [UIColor clearColor];
+            [collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"cellIdf"];
+            collectionView.dataSource = self;
+            collectionView;
+        
+        });
+    }
+    return _collectionView;
 }
-*/
+
+#pragma mark - collection view protocol
+
+
+- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
+{
+    return 1;
+}
+
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
+{
+    return 10;
+}
+
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    UICollectionViewCell * cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"cellIdf" forIndexPath:indexPath];
+    
+    cell.backgroundColor = [UIColor redColor];
+    
+    return cell;
+}
+
+
 
 @end

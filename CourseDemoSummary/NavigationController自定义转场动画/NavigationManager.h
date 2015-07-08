@@ -10,4 +10,14 @@
 
 @interface NavigationManager : NSObject
 
+- (instancetype)initWithRootViewController:(UIViewController *)controller;
+
+
+- (UINavigationController *)navigationController;
+
+- (void)pushToViewController:(UIViewController *)viewController withTransitionDelegate:(id <UINavigationControllerDelegate>)transitionDelegate;
+
+- (void)popViewController;
+- (void)popToRootViewController;
+
 @end
