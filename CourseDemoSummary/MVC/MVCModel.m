@@ -21,7 +21,7 @@
 
 - (void)didComplete
 {
-    // KVO必须使用self.进行辅助，否则无法触发keyValue coding
+    // KVO必须使用self.进行赋值，否则无法触发keyValue coding
     self.dataList = @[@"a123",@"adzxc"];
 }
 
