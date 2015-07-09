@@ -30,6 +30,7 @@
 		E5D0E4D51B4E136200BC8822 /* MVCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5D0E4D41B4E136200BC8822 /* MVCViewController.m */; };
 		E5D0E4D81B4E174200BC8822 /* MVCView.m in Sources */ = {isa = PBXBuildFile; fileRef = E5D0E4D71B4E174200BC8822 /* MVCView.m */; };
 		E5D0E4DB1B4E20C800BC8822 /* MVCModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E5D0E4DA1B4E20C800BC8822 /* MVCModel.m */; };
+		E5D0E4DE1B4E5A7100BC8822 /* GradientLayerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E5D0E4DD1B4E5A7100BC8822 /* GradientLayerModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +91,8 @@
 		E5D0E4D71B4E174200BC8822 /* MVCView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVCView.m; sourceTree = "<group>"; };
 		E5D0E4D91B4E20C800BC8822 /* MVCModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVCModel.h; sourceTree = "<group>"; };
 		E5D0E4DA1B4E20C800BC8822 /* MVCModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVCModel.m; sourceTree = "<group>"; };
+		E5D0E4DC1B4E5A7100BC8822 /* GradientLayerModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GradientLayerModel.h; sourceTree = "<group>"; };
+		E5D0E4DD1B4E5A7100BC8822 /* GradientLayerModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GradientLayerModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -241,6 +244,8 @@
 			children = (
 				E59114F21B4A8811006DEEC1 /* GradientLayerWithMaskViewController.h */,
 				E59114F31B4A8811006DEEC1 /* GradientLayerWithMaskViewController.m */,
+				E5D0E4DC1B4E5A7100BC8822 /* GradientLayerModel.h */,
+				E5D0E4DD1B4E5A7100BC8822 /* GradientLayerModel.m */,
 			);
 			path = "CAGradientLayer + mask";
 			sourceTree = "<group>";
@@ -412,6 +417,7 @@
 				E59114B81B4A70BE006DEEC1 /* ViewController.m in Sources */,
 				E59114B51B4A70BE006DEEC1 /* AppDelegate.m in Sources */,
 				E59114F41B4A8811006DEEC1 /* GradientLayerWithMaskViewController.m in Sources */,
+				E5D0E4DE1B4E5A7100BC8822 /* GradientLayerModel.m in Sources */,
 				E59114F11B4A8803006DEEC1 /* DisplayLinkWithInterpolateViewController.m in Sources */,
 				E5B261FC1B4BB3BA00965919 /* NavigationManager.m in Sources */,
 				E59114B21B4A70BE006DEEC1 /* main.m in Sources */,
