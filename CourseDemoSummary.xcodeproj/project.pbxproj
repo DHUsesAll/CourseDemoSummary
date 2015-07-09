@@ -27,6 +27,9 @@
 		E59115041B4B6EFB006DEEC1 /* DHCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = E59115031B4B6EFB006DEEC1 /* DHCollectionViewLayout.m */; };
 		E59115081B4B7CD9006DEEC1 /* NavigationAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = E59115071B4B7CD9006DEEC1 /* NavigationAnimationController.m */; };
 		E5B261FC1B4BB3BA00965919 /* NavigationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E5B261FB1B4BB3BA00965919 /* NavigationManager.m */; };
+		E5D0E4D51B4E136200BC8822 /* MVCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5D0E4D41B4E136200BC8822 /* MVCViewController.m */; };
+		E5D0E4D81B4E174200BC8822 /* MVCView.m in Sources */ = {isa = PBXBuildFile; fileRef = E5D0E4D71B4E174200BC8822 /* MVCView.m */; };
+		E5D0E4DB1B4E20C800BC8822 /* MVCModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E5D0E4DA1B4E20C800BC8822 /* MVCModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +84,12 @@
 		E59115071B4B7CD9006DEEC1 /* NavigationAnimationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationAnimationController.m; sourceTree = "<group>"; };
 		E5B261FA1B4BB3BA00965919 /* NavigationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationManager.h; sourceTree = "<group>"; };
 		E5B261FB1B4BB3BA00965919 /* NavigationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationManager.m; sourceTree = "<group>"; };
+		E5D0E4D31B4E136200BC8822 /* MVCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVCViewController.h; sourceTree = "<group>"; };
+		E5D0E4D41B4E136200BC8822 /* MVCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVCViewController.m; sourceTree = "<group>"; };
+		E5D0E4D61B4E174200BC8822 /* MVCView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVCView.h; sourceTree = "<group>"; };
+		E5D0E4D71B4E174200BC8822 /* MVCView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVCView.m; sourceTree = "<group>"; };
+		E5D0E4D91B4E20C800BC8822 /* MVCModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVCModel.h; sourceTree = "<group>"; };
+		E5D0E4DA1B4E20C800BC8822 /* MVCModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVCModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				E59114DD1B4A8266006DEEC1 /* 屏幕适配 */,
+				E5D0E4D21B4E131500BC8822 /* MVC */,
 				E59115051B4B7CBC006DEEC1 /* NavigationController自定义转场动画 */,
 				E59114FE1B4B6E8B006DEEC1 /* CollectionView自定义布局 */,
 				E59114E61B4A87CA006DEEC1 /* 动画时间控制 */,
@@ -284,6 +294,19 @@
 			path = "NavigationController自定义转场动画";
 			sourceTree = "<group>";
 		};
+		E5D0E4D21B4E131500BC8822 /* MVC */ = {
+			isa = PBXGroup;
+			children = (
+				E5D0E4D31B4E136200BC8822 /* MVCViewController.h */,
+				E5D0E4D41B4E136200BC8822 /* MVCViewController.m */,
+				E5D0E4D61B4E174200BC8822 /* MVCView.h */,
+				E5D0E4D71B4E174200BC8822 /* MVCView.m */,
+				E5D0E4D91B4E20C800BC8822 /* MVCModel.h */,
+				E5D0E4DA1B4E20C800BC8822 /* MVCModel.m */,
+			);
+			path = MVC;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -392,7 +415,10 @@
 				E59114F11B4A8803006DEEC1 /* DisplayLinkWithInterpolateViewController.m in Sources */,
 				E5B261FC1B4BB3BA00965919 /* NavigationManager.m in Sources */,
 				E59114B21B4A70BE006DEEC1 /* main.m in Sources */,
+				E5D0E4D81B4E174200BC8822 /* MVCView.m in Sources */,
+				E5D0E4D51B4E136200BC8822 /* MVCViewController.m in Sources */,
 				E59114DB1B4A719D006DEEC1 /* HomeViewModel.m in Sources */,
+				E5D0E4DB1B4E20C800BC8822 /* MVCModel.m in Sources */,
 				E59115081B4B7CD9006DEEC1 /* NavigationAnimationController.m in Sources */,
 				E59114EE1B4A87E7006DEEC1 /* AnimationTimeControllingViewController.m in Sources */,
 				E59114E51B4A8282006DEEC1 /* DHFoundationTool.m in Sources */,

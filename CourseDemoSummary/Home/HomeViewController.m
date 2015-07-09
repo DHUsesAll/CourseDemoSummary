@@ -143,13 +143,7 @@
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     // 跳转controller
     NSString * controllerClassName = [self.viewModel.courseControllerInfoContainer objectAtIndex:indexPath.row];
-    
-    if ([controllerClassName isEqualToString:@"NavigationTransitionViewController"]) {
-        
-        
-        
-    }
-    
+
     NSString * controllerTitle = [self.viewModel.courseInfoContainer objectAtIndex:indexPath.row];
     
     UIViewController * controller = [[NSClassFromString(controllerClassName) alloc] init];

@@ -105,6 +105,9 @@
     
     [self _addCourseInfo:@"CollectionView自定义布局"];
     [self _addCourseControllerInfo:@"CollectionViewLayoutViewController"];
+    
+    [self _addCourseInfo:@"MVC"];
+    [self _addCourseControllerInfo:@"MVCViewController"];
 }
 
 @end

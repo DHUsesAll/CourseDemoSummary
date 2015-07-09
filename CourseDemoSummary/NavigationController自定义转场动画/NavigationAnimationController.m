@@ -9,7 +9,6 @@
 #import "NavigationAnimationController.h"
 
 @implementation NavigationAnimationController
-
 {
     UINavigationControllerOperation operation_;
 }
