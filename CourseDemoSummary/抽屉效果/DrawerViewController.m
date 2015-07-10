@@ -83,6 +83,10 @@
 // 手势代理方法
 - (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer
 {
+    // 如果我们已经push到了新的controller，则不响应这个抽屉效果的手势
+    if (self.naVC.viewControllers.count > 1) {
+        return NO;
+    }
     return YES;
 }
 
@@ -171,10 +175,7 @@
         // fabs是取绝对值的函数
         CGFloat percent = 1-fabs(offsetX)/CGRectGetWidth(self.view.bounds);
         
-        NSLog(@"%f",percent);
         [self handlerAnimationWithPercent:percent];
-        
-        
         
     } else if (sender.state == UIGestureRecognizerStateEnded) {
         

@@ -18,6 +18,8 @@
     [super viewDidLoad];
     self.tableView.dataSource = self;
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cellIdf"];
+    self.tableView.tableFooterView = [[UIView alloc] init];
+    
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
