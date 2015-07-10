@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E54858251B4F62C9008EFE41 /* DrawerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E54858241B4F62C9008EFE41 /* DrawerViewController.m */; };
+		E54858281B4F64E9008EFE41 /* LeftDrawerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E54858271B4F64E9008EFE41 /* LeftDrawerViewController.m */; };
 		E59114B21B4A70BE006DEEC1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E59114B11B4A70BE006DEEC1 /* main.m */; };
 		E59114B51B4A70BE006DEEC1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E59114B41B4A70BE006DEEC1 /* AppDelegate.m */; };
 		E59114B81B4A70BE006DEEC1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E59114B71B4A70BE006DEEC1 /* ViewController.m */; };
@@ -44,6 +46,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E54858231B4F62C9008EFE41 /* DrawerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawerViewController.h; sourceTree = "<group>"; };
+		E54858241B4F62C9008EFE41 /* DrawerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawerViewController.m; sourceTree = "<group>"; };
+		E54858261B4F64E9008EFE41 /* LeftDrawerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftDrawerViewController.h; sourceTree = "<group>"; };
+		E54858271B4F64E9008EFE41 /* LeftDrawerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftDrawerViewController.m; sourceTree = "<group>"; };
 		E59114AC1B4A70BE006DEEC1 /* CourseDemoSummary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CourseDemoSummary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E59114B01B4A70BE006DEEC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E59114B11B4A70BE006DEEC1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -113,6 +119,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E54858221B4F62B2008EFE41 /* 抽屉效果 */ = {
+			isa = PBXGroup;
+			children = (
+				E54858231B4F62C9008EFE41 /* DrawerViewController.h */,
+				E54858241B4F62C9008EFE41 /* DrawerViewController.m */,
+				E54858261B4F64E9008EFE41 /* LeftDrawerViewController.h */,
+				E54858271B4F64E9008EFE41 /* LeftDrawerViewController.m */,
+			);
+			path = "抽屉效果";
+			sourceTree = "<group>";
+		};
 		E59114A31B4A70BE006DEEC1 = {
 			isa = PBXGroup;
 			children = (
@@ -135,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				E59114DD1B4A8266006DEEC1 /* 屏幕适配 */,
+				E54858221B4F62B2008EFE41 /* 抽屉效果 */,
 				E5D0E4D21B4E131500BC8822 /* MVC */,
 				E59115051B4B7CBC006DEEC1 /* NavigationController自定义转场动画 */,
 				E59114FE1B4B6E8B006DEEC1 /* CollectionView自定义布局 */,
@@ -426,9 +444,11 @@
 				E59114DB1B4A719D006DEEC1 /* HomeViewModel.m in Sources */,
 				E5D0E4DB1B4E20C800BC8822 /* MVCModel.m in Sources */,
 				E59115081B4B7CD9006DEEC1 /* NavigationAnimationController.m in Sources */,
+				E54858251B4F62C9008EFE41 /* DrawerViewController.m in Sources */,
 				E59114EE1B4A87E7006DEEC1 /* AnimationTimeControllingViewController.m in Sources */,
 				E59114E51B4A8282006DEEC1 /* DHFoundationTool.m in Sources */,
 				E59114E41B4A8282006DEEC1 /* DHConvenienceAutoLayout.m in Sources */,
+				E54858281B4F64E9008EFE41 /* LeftDrawerViewController.m in Sources */,
 				E59115011B4B6EA7006DEEC1 /* CollectionViewLayoutViewController.m in Sources */,
 				E59114D81B4A7186006DEEC1 /* HomeViewController.m in Sources */,
 				E59114F71B4A881E006DEEC1 /* ShapeLayerWithBezierPathViewController.m in Sources */,

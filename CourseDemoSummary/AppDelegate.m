@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "HomeViewController.h"
+#import "DrawerViewController.h"
 
 @interface AppDelegate ()
 
@@ -28,9 +28,9 @@
         _window = ({
             
             UIWindow * window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-            UINavigationController * naVC = [[UINavigationController alloc] initWithRootViewController:[[HomeViewController alloc] init]];
+//            UINavigationController * naVC = [[UINavigationController alloc] initWithRootViewController:[[DrawerContainerViewController alloc] init]];
             
-            window.rootViewController = naVC;
+            window.rootViewController = [[DrawerContainerViewController alloc] init];
             window;
             
         });

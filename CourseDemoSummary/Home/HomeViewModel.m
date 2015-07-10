@@ -108,6 +108,10 @@
     
     [self _addCourseInfo:@"MVC"];
     [self _addCourseControllerInfo:@"MVCViewController"];
+    
+    
+//    [self _addCourseInfo:@"抽屉效果"];
+//    [self _addCourseControllerInfo:@"DrawerContainerViewController"];
 }
 
 @end
